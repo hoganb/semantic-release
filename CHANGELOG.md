@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/hoganb/semantic-release/compare/v1.0.0...v1.0.1) (2022-08-24)
+
+
+### Bug Fixes
+
+* **publish:** scoped package name ([92bdfba](https://github.com/hoganb/semantic-release/commit/92bdfbafc06ca9d0700638a2421056580410f778))
+
 # 1.0.0 (2022-08-24)
 
 
