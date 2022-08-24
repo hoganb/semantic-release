@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf node_modules",
+    "clean": "rimraf .husky/_ node_modules",
     "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
