@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/hoganb/semantic-release/compare/v1.0.3...v1.0.4) (2022-08-24)
+
+
+### Bug Fixes
+
+* readme update ([#2](https://github.com/hoganb/semantic-release/issues/2)) ([9d1f32e](https://github.com/hoganb/semantic-release/commit/9d1f32e939977eea2702e401aa1c50fe8ddeade3))
+
 ## [1.0.3](https://github.com/hoganb/semantic-release/compare/v1.0.2...v1.0.3) (2022-08-24)
 
 

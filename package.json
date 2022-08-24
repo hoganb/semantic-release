@@ -1,6 +1,6 @@
 {
   "name": "@hoganb/semantic-release",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,9 @@
     "semantic-release": "^19.0.5"
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "publishConfig": {
     "access": "public"
