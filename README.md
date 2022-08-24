@@ -4,4 +4,4 @@
 semantic-release automates the whole package release workflow including:
 - Determining the next semantic version number based upon conventional commits
 - Generating the release notes
-- Publishing the package
+- Publishing the package to public npm registry 
