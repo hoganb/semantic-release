@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/hoganb/semantic-release/compare/v1.0.1...v1.0.2) (2022-08-24)
+
+
+### Bug Fixes
+
+* **publish:** publishConfig access public ([56e7453](https://github.com/hoganb/semantic-release/commit/56e7453134a8bcc045312c65d3a8dd19118364b7))
+
 ## [1.0.1](https://github.com/hoganb/semantic-release/compare/v1.0.0...v1.0.1) (2022-08-24)
 
 
