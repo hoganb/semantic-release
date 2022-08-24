@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/hoganb/semantic-release/compare/v1.0.2...v1.0.3) (2022-08-24)
+
+
+### Bug Fixes
+
+* rebuild package-lock.json ([269a3b8](https://github.com/hoganb/semantic-release/commit/269a3b80beb618808edfa0dccf8399a010b73383))
+
 ## [1.0.2](https://github.com/hoganb/semantic-release/compare/v1.0.1...v1.0.2) (2022-08-24)
 
 
