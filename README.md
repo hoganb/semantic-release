@@ -16,4 +16,4 @@ Q. How does it determine the next version number and generate release notes?
 
 Q. How does it publish the package?
 
-A. It internally run command of npm publish using npm token
+- A. It internally run command of npm publish using npm token
