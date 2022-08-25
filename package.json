@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/hoganb/semantic-release.git"
   },
-  "keywords": [],
+  "keywords": ["semantic-release"],
   "author": "",
   "license": "MIT",
   "bugs": {
