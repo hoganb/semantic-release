@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/hoganb/semantic-release/compare/v3.1.0...v3.1.1) (2022-08-25)
+
+
+### Bug Fixes
+
+* :memo: add keyword ([#13](https://github.com/hoganb/semantic-release/issues/13)) ([79d9c4a](https://github.com/hoganb/semantic-release/commit/79d9c4a83db4b62e7447d831b48243cfd97454d6))
+
 # [3.1.0](https://github.com/hoganb/semantic-release/compare/v3.0.0...v3.1.0) (2022-08-25)
 
 
