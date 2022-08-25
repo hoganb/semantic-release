@@ -19,6 +19,3 @@ Q. How does it publish the package?
 - A. It internally run command of npm publish using npm token
 
 ### Footer
-
-deets
-new deets
