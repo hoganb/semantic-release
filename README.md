@@ -12,7 +12,7 @@ Branch protection to push directly to `main` branch **disabled** in order for th
 ## Q&A
 Q. How does it determine the next version number and generate release notes?
 
-A. It uses formalized commit messages. e.g. fix: for patch version, feat: for minor version, and BREAKING_CHANGE: for the major version
+- A. It uses formalized commit messages. e.g. fix: for patch version, feat: for minor version, and BREAKING_CHANGE: for the major version
 
 Q. How does it publish the package?
 
