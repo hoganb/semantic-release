@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/hoganb/semantic-release/compare/v1.0.6...v2.0.0) (2022-08-25)
+
+
+### Documentation
+
+* new deets ([#8](https://github.com/hoganb/semantic-release/issues/8)) ([cbf7339](https://github.com/hoganb/semantic-release/commit/cbf7339d1de7f7ec163f8d913aa014c2c581d867))
+
+
+### BREAKING CHANGES
+
+* uh oh
+
 ## [1.0.6](https://github.com/hoganb/semantic-release/compare/v1.0.5...v1.0.6) (2022-08-25)
 
 
