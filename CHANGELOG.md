@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/hoganb/semantic-release/compare/v2.0.0...v2.1.0) (2022-08-25)
+
+
+### Features
+
+* pr template ([#9](https://github.com/hoganb/semantic-release/issues/9)) ([28e8351](https://github.com/hoganb/semantic-release/commit/28e835154c90370df2191bdabdaed52f5422a71d))
+
 # [2.0.0](https://github.com/hoganb/semantic-release/compare/v1.0.6...v2.0.0) (2022-08-25)
 
 
