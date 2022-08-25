@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/hoganb/semantic-release/compare/v2.1.0...v3.0.0) (2022-08-25)
+
+
+### Documentation
+
+* remove deets ([#10](https://github.com/hoganb/semantic-release/issues/10)) ([0c5019c](https://github.com/hoganb/semantic-release/commit/0c5019c233a53a3ff13bf1bb288affc39a07e60c))
+
+
+### BREAKING CHANGES
+
+* because
+
 # [2.1.0](https://github.com/hoganb/semantic-release/compare/v2.0.0...v2.1.0) (2022-08-25)
 
 
