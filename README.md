@@ -8,3 +8,12 @@ semantic-release automates the whole package release workflow including:
 
 ## Notes
 Branch protection to push directly to `main` branch **disabled** in order for the *semantic-release* bot to update package version (in both `package-lock.json` and `package.json`) and `CHANGELOG.md` files on release.
+
+## Q&A
+Q. How does it determine the next version number and generate release notes?
+
+A. It uses formalized commit messages. e.g. fix: for patch version, feat: for minor version, and BREAKING_CHANGE: for the major version
+
+Q. How does it publish the package?
+
+A. It internally run command of npm publish using npm token
