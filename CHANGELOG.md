@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/hoganb/semantic-release/compare/v3.0.0...v3.1.0) (2022-08-25)
+
+
+### Features
+
+* add footer note ([#12](https://github.com/hoganb/semantic-release/issues/12)) ([2044559](https://github.com/hoganb/semantic-release/commit/2044559e1190fd3a68a9736124eae8f7d422e37e))
+
 # [3.0.0](https://github.com/hoganb/semantic-release/compare/v2.1.0...v3.0.0) (2022-08-25)
 
 
