@@ -13,7 +13,9 @@
     "url": "git+https://github.com/hoganb/semantic-release.git"
   },
   "keywords": [
-    "semantic-release"
+    "conventional commits",
+    "semantic-release",
+    "semver"
   ],
   "author": "",
   "license": "MIT",
