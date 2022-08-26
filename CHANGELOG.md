@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/hoganb/semantic-release/compare/v3.1.1...v3.1.2) (2022-08-26)
+
+
+### Performance Improvements
+
+* extend keywords ([#14](https://github.com/hoganb/semantic-release/issues/14)) ([4e037d5](https://github.com/hoganb/semantic-release/commit/4e037d59bea6fcca1ad1ded8045f4dc9aee45711))
+
 ## [3.1.1](https://github.com/hoganb/semantic-release/compare/v3.1.0...v3.1.1) (2022-08-25)
 
 
