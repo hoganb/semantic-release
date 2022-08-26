@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/hoganb/semantic-release/compare/v3.1.2...v3.1.3) (2022-08-26)
+
+
+### Bug Fixes
+
+* update pull request template ([#15](https://github.com/hoganb/semantic-release/issues/15)) ([546ce9f](https://github.com/hoganb/semantic-release/commit/546ce9f07e2fe1e571daebc6d6f15cf72caa073f))
+
 ## [3.1.2](https://github.com/hoganb/semantic-release/compare/v3.1.1...v3.1.2) (2022-08-26)
 
 
