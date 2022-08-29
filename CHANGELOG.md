@@ -1,3 +1,12 @@
+# [3.2.0](https://github.com/hoganb/semantic-release/compare/v3.1.3...v3.2.0) (2022-08-29)
+
+
+### Features
+
+* add bash ([#18](https://github.com/hoganb/semantic-release/issues/18)) ([1bbdfca](https://github.com/hoganb/semantic-release/commit/1bbdfca9cd0055eb414e66eb7de0a4d6577c2b10))
+* add exec dep ([#17](https://github.com/hoganb/semantic-release/issues/17)) ([0dbcc81](https://github.com/hoganb/semantic-release/commit/0dbcc81ca778e808ec8dcc2dc5205846637612e5))
+* add prepare shell script ([#16](https://github.com/hoganb/semantic-release/issues/16)) ([86e2807](https://github.com/hoganb/semantic-release/commit/86e2807385d6b8193fce8e47bc52433041794726))
+
 ## [3.1.3](https://github.com/hoganb/semantic-release/compare/v3.1.2...v3.1.3) (2022-08-26)
 
 
