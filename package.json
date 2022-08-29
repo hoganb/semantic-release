@@ -57,7 +57,7 @@
       [
         "@semantic-release/exec",
         {
-          "prepareCmd": "./ls.sh"
+          "prepareCmd": "bash ./ls.sh"
         }
       ],
       "@semantic-release/npm",
