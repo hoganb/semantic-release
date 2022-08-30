@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/hoganb/semantic-release/compare/v3.2.0...v3.3.0) (2022-08-30)
+
+
+### Features
+
+* add typescript publication ([#19](https://github.com/hoganb/semantic-release/issues/19)) ([a906201](https://github.com/hoganb/semantic-release/commit/a9062010c168b9d735360e031b61dae101bfd637))
+
 # [3.2.0](https://github.com/hoganb/semantic-release/compare/v3.1.3...v3.2.0) (2022-08-29)
 
 
