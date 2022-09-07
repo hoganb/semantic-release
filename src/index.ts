@@ -1,1 +1,1 @@
-console.log('Hello from @hoganb/semantic-release');
+console.log('Hello world from @hoganb/semantic-release');
