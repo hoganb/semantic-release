@@ -1,1 +1,4 @@
-export const featureA = () => null;
+export const featureA = () => {
+    console.log('running featureA');
+    return undefined;
+};
