@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/hoganb/semantic-release/compare/v3.4.0...v3.4.1) (2022-09-07)
+
+
+### Bug Fixes
+
+* typo in console log ([#21](https://github.com/hoganb/semantic-release/issues/21)) ([2ae3ce3](https://github.com/hoganb/semantic-release/commit/2ae3ce3e3f425d1dec065649bd3f6a88b9554469))
+
 # [3.4.0](https://github.com/hoganb/semantic-release/compare/v3.3.0...v3.4.0) (2022-09-07)
 
 
