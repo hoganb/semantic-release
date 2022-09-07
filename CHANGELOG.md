@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/hoganb/semantic-release/compare/v3.5.0...v4.0.0) (2022-09-07)
+
+
+### Code Refactoring
+
+* undefined to null ([#23](https://github.com/hoganb/semantic-release/issues/23)) ([cb81ead](https://github.com/hoganb/semantic-release/commit/cb81ead3e8919b4f9f746082f14f470fbd70414c))
+
+
+### BREAKING CHANGES
+
+* featureA refactored
+
 # [3.5.0](https://github.com/hoganb/semantic-release/compare/v3.4.1...v3.5.0) (2022-09-07)
 
 
