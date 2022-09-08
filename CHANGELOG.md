@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/hoganb/semantic-release/compare/v5.1.0...v6.0.0) (2022-09-08)
+
+
+### Code Refactoring
+
+* featureB returns a string ([#30](https://github.com/hoganb/semantic-release/issues/30)) ([26e5ec7](https://github.com/hoganb/semantic-release/commit/26e5ec772a8847974dec35013fc7ecc991bd283d))
+
+
+### BREAKING CHANGES
+
+* featureB response type change from number to string
+
 # [5.1.0](https://github.com/hoganb/semantic-release/compare/v5.0.1...v5.1.0) (2022-09-08)
 
 
