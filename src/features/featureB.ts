@@ -1,1 +1,1 @@
-export const featureB = () => undefined;
+export const featureB = () => 1;
