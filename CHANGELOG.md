@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/hoganb/semantic-release/compare/v5.0.1...v5.1.0) (2022-09-08)
+
+
+### Features
+
+* add featureF ([#29](https://github.com/hoganb/semantic-release/issues/29)) ([b1c62b2](https://github.com/hoganb/semantic-release/commit/b1c62b2fa0720ae781657681195e3fef50536923))
+
 ## [5.0.1](https://github.com/hoganb/semantic-release/compare/v5.0.0...v5.0.1) (2022-09-08)
 
 
