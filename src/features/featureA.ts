@@ -1,4 +1,4 @@
 export const featureA = () => {
-    console.log('execute featureA');
+    console.log('run featureA');
     return undefined;
 };
