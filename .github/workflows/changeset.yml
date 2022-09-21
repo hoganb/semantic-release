@@ -9,17 +9,26 @@ jobs:
         name: Example Job
         runs-on: ubuntu-latest
         steps:
-            - id: changed_files
-              name: git-changesets
-              uses: collin-miller/git-changesets@v1
-              with:
+            #- id: changed_files
+            #  name: git-changesets
+            #  uses: collin-miller/git-changesets@v1
+            #  with:
                   # Default format is 'csv'. Other valid options are 'space-delimited' and 'json'.
-                  format: csv
+            #      format: csv
+            #- name: Print steps context output
+            #  run: |
+            #      echo 'All=${{ steps.changed_files.outputs.all }}'
+            #      echo 'Added=${{ steps.changed_files.outputs.added }}'
+            #      echo 'Modified=${{ steps.changed_files.outputs.modified }}'
+            #      echo 'Removed=${{ steps.changed_files.outputs.removed }}'
+            #      echo 'Renamed=${{ steps.changed_files.outputs.renamed }}'
+            #      echo 'Added/Modified=${{ steps.changed_files.outputs.added_modified }}'
+            - id: changed_files
+              name: Detect PR changes
+              uses: fabidick22/detect-changes-action@v1.0.1
             - name: Print steps context output
               run: |
-                  echo 'All=${{ steps.changed_files.outputs.all }}'
-                  echo 'Added=${{ steps.changed_files.outputs.added }}'
-                  echo 'Modified=${{ steps.changed_files.outputs.modified }}'
-                  echo 'Removed=${{ steps.changed_files.outputs.removed }}'
-                  echo 'Renamed=${{ steps.changed_files.outputs.renamed }}'
-                  echo 'Added/Modified=${{ steps.changed_files.outputs.added_modified }}'
+                  echo 'paths_list=${{ steps.changed_files.outputs.paths_list }}'
+                  echo 'file_list=${{ steps.changed_files.outputs.file_list }}'
+                  echo 'paths_str=${{ steps.changed_files.outputs.paths_str }}'
+                  echo 'file_str=${{ steps.changed_files.outputs.file_str }}'
