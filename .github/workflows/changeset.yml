@@ -23,15 +23,14 @@ jobs:
             #      echo 'Removed=${{ steps.changed_files.outputs.removed }}'
             #      echo 'Renamed=${{ steps.changed_files.outputs.renamed }}'
             #      echo 'Added/Modified=${{ steps.changed_files.outputs.added_modified }}'
-            - id: changed_files
+            - id: changes
               name: Detect PR changes
               uses: fabidick22/detect-changes-action@v2.0.0
               with:
                 path: ./
                 token: ${{ secrets.GITHUB_TOKEN }}
-            - name: Print steps context output
+            - name: Output
               run: |
-                  echo 'paths_list=${{ steps.changed_files.outputs.paths_list }}'
-                  echo 'file_list=${{ steps.changed_files.outputs.file_list }}'
-                  echo 'paths_str=${{ steps.changed_files.outputs.paths_str }}'
-                  echo 'file_str=${{ steps.changed_files.outputs.file_str }}'
+                  echo 'paths_list=${{ steps.changes.outputs.paths_list }}'
+                  echo 'file_list=${{ steps.changes.outputs.file_list }}'
+                  echo 'test=${{ fromJSON(steps.changes.outputs.paths_list) }}'
