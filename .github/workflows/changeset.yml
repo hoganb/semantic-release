@@ -1,9 +1,9 @@
-name: Example
-
+name: 'PR Detect changes'
 on:
-    pull_request:
-    push:
-
+  pull_request:
+    types: [synchronize, opened, reopened, labeled]
+    branches:
+      - main
 jobs:
     job1:
         name: Example Job
@@ -25,7 +25,7 @@ jobs:
             #      echo 'Added/Modified=${{ steps.changed_files.outputs.added_modified }}'
             - id: changed_files
               name: Detect PR changes
-              uses: fabidick22/detect-changes-action@v1.0.1
+              uses: fabidick22/detect-changes-action@v2.0.0
               with:
                 path: ./
                 token: ${{ secrets.GITHUB_TOKEN }}
