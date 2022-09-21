@@ -26,6 +26,9 @@ jobs:
             - id: changed_files
               name: Detect PR changes
               uses: fabidick22/detect-changes-action@v1.0.1
+              with:
+                path: ./
+                token: ${{ secrets.GITHUB_TOKEN }}
             - name: Print steps context output
               run: |
                   echo 'paths_list=${{ steps.changed_files.outputs.paths_list }}'
