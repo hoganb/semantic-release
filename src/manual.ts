@@ -23,7 +23,7 @@ const input = process.env.JSON_INPUT;
 console.log(input);
 if (input) {
   const json: Input = JSON.parse(input);
-  console.log(json);
+//   console.log(json);
   console.log(typeof json);
   const ajv = new Ajv.default();
   const validator = ajv.compile(schema);
