@@ -1,10 +1,10 @@
 import type { JSONSchemaType } from "ajv";
-import * as Ajv from "ajv";
+import Ajv from "ajv";
 
 console.log("BEGIN: Manual JSON input");
 
-type Input = { age: number; hello: string };
-const schema: JSONSchemaType<Input> = {
+type ManualJSONInput = { age: number; hello: string };
+const schema: JSONSchemaType<ManualJSONInput> = {
   additionalProperties: false,
   properties: {
     age: {
@@ -22,10 +22,10 @@ const schema: JSONSchemaType<Input> = {
 const input = process.env.JSON_INPUT;
 console.log(input);
 if (input) {
-  const json: Input = JSON.parse(input);
-//   console.log(json);
+  const json = JSON.parse(input);
+  console.log(json);
   console.log(typeof json);
-  const ajv = new Ajv.default();
+  const ajv = new Ajv();
   const validator = ajv.compile(schema);
   const result = validator(json);
   console.log(`JSON schema validation result: ${result}`);
