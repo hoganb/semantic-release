@@ -1,0 +1,21 @@
+name: Manual JSON input
+
+on:
+  workflow_dispatch:
+    inputs:
+      json_input:
+        type: string
+        description: JSON input
+
+jobs:
+  manual-json-input:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npx ts-node src/manual.ts
+        env:
+          JSON_INPUT: ${{ inputs.json_input }}
