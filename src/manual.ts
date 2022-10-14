@@ -24,6 +24,7 @@ console.log(input);
 if (input) {
   const json = JSON.parse(input);
   console.log(json);
+  console.log(typeof json);
   const ajv = new Ajv.default();
   const validator = ajv.compile(schema);
   const result = validator(json);
