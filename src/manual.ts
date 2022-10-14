@@ -22,12 +22,12 @@ const schema: JSONSchemaType<ManualJSONInput> = {
 const input = process.env.JSON_INPUT;
 console.log(input);
 if (input) {
-  const json = JSON.parse(input);
-  console.log(json);
-  console.log(typeof json);
+//   const json = JSON.parse(input);
+//   console.log(json);
+//   console.log(typeof json);
   const ajv = new Ajv();
   const validator = ajv.compile(schema);
-  const result = validator(json);
+  const result = validator(JSON.parse(input));
   console.log(`JSON schema validation result: ${result}`);
   if (!result) {
     throw validator.errors;
