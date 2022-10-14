@@ -5,7 +5,7 @@ console.log(input);
 if (input) {
     try {
         const json = JSON.parse(input);
-        console.log(JSON.stringify(json, null, 2));
+        console.log(json);
     } catch (error) {
         console.error(error);
     }
