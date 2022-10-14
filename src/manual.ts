@@ -27,7 +27,10 @@ if (input) {
   const ajv = new Ajv();
   const validator = ajv.compile(schema);
   const result = validator(json);
-  console.log(result);
+  console.log(`JSON schema validation result: ${result}`);
+  if (!result) {
+    throw validator.errors;
+  }
 }
 
 console.log("END: Manual JSON input");
