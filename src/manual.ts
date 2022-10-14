@@ -27,7 +27,7 @@ if (input) {
   console.log(typeof json);
   const ajv = new Ajv();
   const validator = ajv.compile(schema);
-  const result = validator(JSON.parse(input));
+  const result = validator(json);
   console.log(`JSON schema validation result: ${result}`);
   if (!result) {
     throw validator.errors;
