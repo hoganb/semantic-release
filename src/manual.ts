@@ -1,5 +1,5 @@
 import type { JSONSchemaType } from "ajv";
-import Ajv from "ajv";
+import * as Ajv from "ajv";
 
 console.log("BEGIN: Manual JSON input");
 
@@ -24,7 +24,7 @@ console.log(input);
 if (input) {
   const json = JSON.parse(input);
   console.log(json);
-  const ajv = new Ajv();
+  const ajv = new Ajv.default();
   const validator = ajv.compile(schema);
   const result = validator(json);
   console.log(`JSON schema validation result: ${result}`);
