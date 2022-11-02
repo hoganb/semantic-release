@@ -14,13 +14,15 @@ jobs:
             test:journey:oea-test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Invoke workflow with inputs
+      - name: Workflow Dispatch and wait
         id: workflow_dispatch
-        uses: aurelien-baudet/workflow-dispatch@v2
+        uses: aurelien-baudet/workflow-dispatch@v2.1.1
         with:
-          workflow: manual-json-input.yml
           token: ${{ secrets.PERSONAL_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
+          wait-for-completion: true
+          wait-for-completion-interval: 10s
+          workflow: manual-json-input.yml
           inputs: '{ "json_input": "{\n  \"age\": 22,\n  \"hello\": \"world\"\n}" }'
       - name: Workflow dispatch conclusion
         if: success() || failure()
