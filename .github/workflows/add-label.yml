@@ -14,3 +14,13 @@ jobs:
             test:journey:oea-test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Invoke workflow with inputs
+        id: workflow_dispatch
+        uses: aurelien-baudet/workflow-dispatch@v2
+        with:
+          workflow: manual-json-input
+          token: ${{ secrets.GITHUB_TOKEN }}
+          inputs: '{ "json_input": "{\n  \"age\": 22,\n  \"hello\": \"world\"\n}" }'
+      - name: Workflow dispatch conclusion
+        if: success() || failure()
+        run: echo Trigger conclusion ${{ steps.workflow_dispatch.outputs.workflow-conclusion }}
