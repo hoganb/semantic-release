@@ -18,7 +18,7 @@ jobs:
         id: workflow_dispatch
         uses: aurelien-baudet/workflow-dispatch@v2
         with:
-          workflow: manual-json-input
+          workflow: manual-json-input.yml
           token: ${{ secrets.GITHUB_TOKEN }}
           inputs: '{ "json_input": "{\n  \"age\": 22,\n  \"hello\": \"world\"\n}" }'
       - name: Workflow dispatch conclusion
