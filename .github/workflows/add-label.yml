@@ -1,0 +1,45 @@
+name: Add Label
+
+on:
+  pull_request:
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: christianvuerings/add-labels@v1.1
+        with:
+          labels: |
+            test:journey:oea-test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Internal workflow dispatch and wait
+        id: internal_workflow_dispatch
+        uses: aurelien-baudet/workflow-dispatch@v2.1.1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          wait-for-completion: true
+          wait-for-completion-interval: 10s
+          wait-for-completion-timeout: 1m
+          workflow: manual-json-input.yml
+          inputs: '{ "json_input": "{\n  \"age\": 22,\n  \"hello\": \"world\"\n}" }'
+      - name: Internal workflow dispatch conclusion
+        if: success() || failure()
+        run: echo Trigger conclusion ${{ steps.internal_workflow_dispatch.outputs.workflow-conclusion }}
+      - name: External workflow dispatch and wait
+        id: external_workflow_dispatch
+        uses: aurelien-baudet/workflow-dispatch@v2.1.1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repo: ovotech/journey-tests-runner
+          ref: main
+          wait-for-completion: true
+          wait-for-completion-interval: 10s
+          wait-for-completion-timeout: 1m
+          workflow: manual_create_account.yml
+          inputs: '{ "target_environment": "oea-sandbox", "config": "{\n  \"age\": 22,\n  \"hello\": \"world\"\n}" }'
+      - name: External workflow dispatch conclusion
+        if: success() || failure()
+        run: echo Trigger conclusion ${{ steps.external_workflow_dispatch.outputs.workflow-conclusion }}
