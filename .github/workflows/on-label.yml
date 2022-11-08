@@ -20,4 +20,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: echo Hello, ${{ github.event.label.name }} on ${{ github.ref_name }}!
+        run: echo Hello, ${{ github.event.label.name }} on ${{ github.ref }}!
